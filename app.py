@@ -73,7 +73,7 @@ def produto(produto_id):
     produto = next((p for p in produtos if p["id"] == produto_id), None)
     if produto:
         return render_template('produto.html', produto=produto)
-    return "Produto não encontrado", 404
+    return "Produto não encontrado", 
 
 if __name__ == '__main__':
     app.run(debug=True)
